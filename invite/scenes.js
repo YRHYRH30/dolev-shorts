@@ -26,7 +26,7 @@ const TAU = Math.PI * 2;
 
 // ---------- offscreen layers ----------
 const MS = 1.6; // marble is rendered larger so the opening close-up stays sharp
-let MARBLE, VEINS_GOLD, TMP, TXT;
+let MARBLE, VEINS_GOLD, TMP, TXT, LEAFBUF;
 function mk(w, h) { const c = document.createElement('canvas'); c.width = w; c.height = h; return c; }
 
 function drawVeins(g, w, h, gold) {
@@ -83,6 +83,7 @@ function initLayers() {
   drawVeins(VEINS_GOLD.getContext('2d'), mw, mh, true);
   TMP = mk(W, H);
   TXT = mk(W, 420);
+  LEAFBUF = mk(W, H);
 }
 
 // ---------- camera ----------
@@ -127,7 +128,7 @@ function drawMarble(t) {
 }
 
 // ---------- leaves ----------
-function frond(len, seed, lean) {
+function frond(ctx, len, seed, lean) {
   // a palm-like frond: arched stem with alternating leaflets, drawn from origin pointing along +x
   const n = 13;
   ctx.lineCap = 'round';
@@ -172,14 +173,23 @@ function drawLeaves(t, near) {
     const off = (1 - p) * 380;
     // gentle, almost imperceptible sway that never stops
     const sway = Math.sin(t * 0.9 + i * 1.7) * 0.025 + Math.sin(t * 0.37 + i) * 0.015;
-    ctx.save();
-    ctx.translate(L.x + L.from[0] * off, L.y + L.from[1] * off);
-    ctx.rotate(L.ang + sway + (1 - p) * 0.25 * L.from[0]);
-    ctx.globalAlpha = (near ? 0.8 : 0.55 + 0.35 * L.depth) * Math.min(1, p * 1.5);
-    if (near) ctx.filter = 'blur(7px)';
-    else if (L.depth < 1) ctx.filter = `blur(${(1 - L.depth) * 3}px)`;
-    frond(L.len, i * 13 + 1, L.lean);
-    ctx.restore();
+    const alpha = (near ? 0.8 : 0.55 + 0.35 * L.depth) * Math.min(1, p * 1.5);
+    // depth-of-field: out-of-focus leaves are drawn at low resolution and scaled up
+    // (much cheaper than a canvas blur filter, which made rendering crawl)
+    const k = near ? 0.12 : L.depth < 1 ? 0.35 : 1;
+    const g = k < 1 ? LEAFBUF.getContext('2d') : ctx;
+    g.save();
+    if (k < 1) { g.setTransform(1, 0, 0, 1, 0, 0); g.clearRect(0, 0, LEAFBUF.width, LEAFBUF.height); g.scale(k, k); }
+    g.translate(L.x + L.from[0] * off, L.y + L.from[1] * off);
+    g.rotate(L.ang + sway + (1 - p) * 0.25 * L.from[0]);
+    if (k === 1) g.globalAlpha = alpha;
+    frond(g, L.len, i * 13 + 1, L.lean);
+    g.restore();
+    if (k < 1) {
+      ctx.save(); ctx.globalAlpha = alpha; ctx.imageSmoothingQuality = 'high';
+      ctx.drawImage(LEAFBUF, 0, 0, Math.ceil(W * k), Math.ceil(H * k), 0, 0, W, H);
+      ctx.restore();
+    }
   }
 }
 
