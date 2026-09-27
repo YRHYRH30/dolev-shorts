@@ -1,3 +1,6 @@
 video/node_modules
 video/out/*
 !video/out/episode01.mp4
+invite/node_modules
+invite/out/*
+!invite/out/invite.mp4
