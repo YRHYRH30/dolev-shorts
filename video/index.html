@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="utf-8">
+<title>יהודי AI — סם אלטמן</title>
+<style>
+  @font-face { font-family: "Rubik"; src: url("../fonts/Rubik.ttf"); font-weight: 300 900; }
+  @font-face { font-family: "Secular One"; src: url("../fonts/SecularOne.ttf"); }
+  html, body { margin: 0; background: #111; }
+  canvas { display: block; margin: 0 auto; height: 100vh; width: auto; }
+</style>
+</head>
+<body>
+<canvas id="c" width="1080" height="1920"></canvas>
+<script src="scenes.js"></script>
+<script>
+  // Live preview in a browser (skipped when driven by render.mjs)
+  if (!location.search.includes('render')) {
+    window.ready.then(() => {
+      const start = performance.now() - (parseFloat(new URLSearchParams(location.search).get('t')) || 0) * 1000;
+      const loop = () => { renderFrame(((performance.now() - start) / 1000) % DURATION); requestAnimationFrame(loop); };
+      loop();
+    });
+  }
+</script>
+</body>
+</html>
