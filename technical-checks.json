@@ -1,0 +1,340 @@
+{
+  "clips": [
+    {
+      "id": "01-mother",
+      "resolution": [
+        1080,
+        1920
+      ],
+      "fps": 25,
+      "video_codec": "h264",
+      "audio_codec": "aac",
+      "duration": 44.88,
+      "bytes": 68872767,
+      "mtime_ns": 1790088821873820632,
+      "full_decode_passed": true,
+      "black_or_freeze_findings": [],
+      "visual_check_times": [
+        0.12,
+        0.64,
+        0.72,
+        22.44,
+        44.72
+      ],
+      "hyperframes_checks": {
+        "lint": true,
+        "runtime": true,
+        "layout": true,
+        "motion": true,
+        "contrast": true
+      },
+      "audio_master_zero_offset_correlation_min": 0.9994687651543844,
+      "audio_master_zero_offset_correlation_mean": 0.9996084719353568,
+      "audio_peak_lines": [
+        "Peak level dB: -1.454394",
+        "RMS level dB: -19.053854",
+        "Peak level dB: -1.588167",
+        "RMS level dB: -19.215608",
+        "Peak level dB: -1.454394",
+        "RMS level dB: -19.133978"
+      ]
+    },
+    {
+      "id": "02-learning",
+      "resolution": [
+        1080,
+        1920
+      ],
+      "fps": 25,
+      "video_codec": "h264",
+      "audio_codec": "aac",
+      "duration": 80.32,
+      "bytes": 123093085,
+      "mtime_ns": 1790088900230366489,
+      "full_decode_passed": true,
+      "black_or_freeze_findings": [],
+      "visual_check_times": [
+        0.12,
+        40.16,
+        80.16
+      ],
+      "hyperframes_checks": {
+        "lint": true,
+        "runtime": true,
+        "layout": true,
+        "motion": true,
+        "contrast": true
+      },
+      "audio_master_zero_offset_correlation_min": 0.9990343202473427,
+      "audio_master_zero_offset_correlation_mean": 0.9995497048265727,
+      "audio_peak_lines": [
+        "Peak level dB: -1.304822",
+        "RMS level dB: -19.349107",
+        "Peak level dB: -1.432556",
+        "RMS level dB: -19.488954",
+        "Peak level dB: -1.304822",
+        "RMS level dB: -19.418468"
+      ]
+    },
+    {
+      "id": "03-identity",
+      "resolution": [
+        1080,
+        1920
+      ],
+      "fps": 25,
+      "video_codec": "h264",
+      "audio_codec": "aac",
+      "duration": 66.16,
+      "bytes": 101329710,
+      "mtime_ns": 1790088969631545418,
+      "full_decode_passed": true,
+      "black_or_freeze_findings": [],
+      "visual_check_times": [
+        0.08,
+        0.12,
+        0.16,
+        1.68,
+        1.76,
+        2.88,
+        2.96,
+        33.08,
+        66.0
+      ],
+      "hyperframes_checks": {
+        "lint": true,
+        "runtime": true,
+        "layout": true,
+        "motion": true,
+        "contrast": true
+      },
+      "audio_master_zero_offset_correlation_min": 0.9994551890738482,
+      "audio_master_zero_offset_correlation_mean": 0.9996113767192732,
+      "audio_peak_lines": [
+        "Peak level dB: -1.864610",
+        "RMS level dB: -19.361740",
+        "Peak level dB: -2.043865",
+        "RMS level dB: -19.517419",
+        "Peak level dB: -1.864610",
+        "RMS level dB: -19.438882"
+      ]
+    },
+    {
+      "id": "04-initiative",
+      "resolution": [
+        1080,
+        1920
+      ],
+      "fps": 25,
+      "video_codec": "h264",
+      "audio_codec": "aac",
+      "duration": 44.6,
+      "bytes": 68376189,
+      "mtime_ns": 1790089014361897176,
+      "full_decode_passed": true,
+      "black_or_freeze_findings": [],
+      "visual_check_times": [
+        0.12,
+        22.3,
+        44.44
+      ],
+      "hyperframes_checks": {
+        "lint": true,
+        "runtime": true,
+        "layout": true,
+        "motion": true,
+        "contrast": true
+      },
+      "audio_master_zero_offset_correlation_min": 0.9994527086854003,
+      "audio_master_zero_offset_correlation_mean": 0.9995783686813802,
+      "audio_peak_lines": [
+        "Peak level dB: -3.676670",
+        "RMS level dB: -19.291431",
+        "Peak level dB: -3.795300",
+        "RMS level dB: -19.463824",
+        "Peak level dB: -3.676670",
+        "RMS level dB: -19.376772"
+      ]
+    },
+    {
+      "id": "05-belonging",
+      "resolution": [
+        1080,
+        1920
+      ],
+      "fps": 25,
+      "video_codec": "h264",
+      "audio_codec": "aac",
+      "duration": 45.28,
+      "bytes": 69467501,
+      "mtime_ns": 1790089059688875621,
+      "full_decode_passed": true,
+      "black_or_freeze_findings": [],
+      "visual_check_times": [
+        0.12,
+        1.32,
+        1.4,
+        22.64,
+        45.12
+      ],
+      "hyperframes_checks": {
+        "lint": true,
+        "runtime": true,
+        "layout": true,
+        "motion": true,
+        "contrast": true
+      },
+      "audio_master_zero_offset_correlation_min": 0.9994037934044395,
+      "audio_master_zero_offset_correlation_mean": 0.9995305289697349,
+      "audio_peak_lines": [
+        "Peak level dB: -1.348643",
+        "RMS level dB: -19.174434",
+        "Peak level dB: -1.507179",
+        "RMS level dB: -19.319442",
+        "Peak level dB: -1.348643",
+        "RMS level dB: -19.246333"
+      ]
+    },
+    {
+      "id": "06-cultural-gaps",
+      "resolution": [
+        1080,
+        1920
+      ],
+      "fps": 25,
+      "video_codec": "h264",
+      "audio_codec": "aac",
+      "duration": 54.56,
+      "bytes": 83609548,
+      "mtime_ns": 1790089322249965566,
+      "full_decode_passed": true,
+      "black_or_freeze_findings": [],
+      "visual_check_times": [
+        0.12,
+        8.04,
+        8.12,
+        9.48,
+        9.56,
+        11.48,
+        11.56,
+        12.48,
+        12.56,
+        13.52,
+        13.6,
+        15.92,
+        16.0,
+        22.2,
+        22.28,
+        24.6,
+        24.68,
+        27.28,
+        44.2,
+        44.28,
+        45.6,
+        45.68,
+        54.4
+      ],
+      "hyperframes_checks": {
+        "lint": true,
+        "runtime": true,
+        "layout": true,
+        "motion": true,
+        "contrast": true
+      },
+      "audio_master_zero_offset_correlation_min": 0.9993285363941008,
+      "audio_master_zero_offset_correlation_mean": 0.9995963107337541,
+      "audio_peak_lines": [
+        "Peak level dB: -2.271807",
+        "RMS level dB: -19.410088",
+        "Peak level dB: -2.345118",
+        "RMS level dB: -19.538003",
+        "Peak level dB: -2.271807",
+        "RMS level dB: -19.473574"
+      ]
+    },
+    {
+      "id": "07-dialogue",
+      "resolution": [
+        1080,
+        1920
+      ],
+      "fps": 25,
+      "video_codec": "h264",
+      "audio_codec": "aac",
+      "duration": 112.4,
+      "bytes": 172020156,
+      "mtime_ns": 1790089234580350276,
+      "full_decode_passed": true,
+      "black_or_freeze_findings": [],
+      "visual_check_times": [
+        0.12,
+        56.2,
+        81.12,
+        81.2,
+        82.12,
+        82.2,
+        112.24
+      ],
+      "hyperframes_checks": {
+        "lint": true,
+        "runtime": true,
+        "layout": true,
+        "motion": true,
+        "contrast": true
+      },
+      "audio_master_zero_offset_correlation_min": 0.9993997668201856,
+      "audio_master_zero_offset_correlation_mean": 0.9995933434671027,
+      "audio_peak_lines": [
+        "Peak level dB: -1.417864",
+        "RMS level dB: -19.476292",
+        "Peak level dB: -1.534568",
+        "RMS level dB: -19.603357",
+        "Peak level dB: -1.417864",
+        "RMS level dB: -19.539360"
+      ]
+    },
+    {
+      "id": "08-father",
+      "resolution": [
+        1080,
+        1920
+      ],
+      "fps": 25,
+      "video_codec": "h264",
+      "audio_codec": "aac",
+      "duration": 32.72,
+      "bytes": 50080385,
+      "mtime_ns": 1790089268979620947,
+      "full_decode_passed": true,
+      "black_or_freeze_findings": [],
+      "visual_check_times": [
+        0.12,
+        16.36,
+        28.6,
+        28.68,
+        31.44,
+        31.52,
+        32.56
+      ],
+      "hyperframes_checks": {
+        "lint": true,
+        "runtime": true,
+        "layout": true,
+        "motion": true,
+        "contrast": true
+      },
+      "audio_master_zero_offset_correlation_min": 0.9995527106841295,
+      "audio_master_zero_offset_correlation_mean": 0.9995937810057431,
+      "audio_peak_lines": [
+        "Peak level dB: -1.406306",
+        "RMS level dB: -19.309076",
+        "Peak level dB: -1.477093",
+        "RMS level dB: -19.447301",
+        "Peak level dB: -1.406306",
+        "RMS level dB: -19.377639"
+      ]
+    }
+  ],
+  "limits": "Full-stream automated checks and sampled rendered-image review. Audio waveform compared with the edited master, not direct human listening.",
+  "hyperframes_version": "0.8.60"
+}
